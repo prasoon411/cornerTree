@@ -1,0 +1,53 @@
+<html>
+
+<head>
+   <title> <%= title %> </title>
+  
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.min.css">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.min.js"></script>
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <link rel="stylesheet" href="/css/update.css">
+</head>
+
+<body>
+   
+    <h1 id="head">Update your Password Here! </h1>
+    <div id="main_con">
+
+
+    <form action="/users/updateMain/<%= user.id%>" method="POST">
+
+        <label for="po">Old Password</label><br>
+        <input type="password" id="po" placeholder="Type Old password" name="Old_password" required> <br>
+
+        <label for="p">Password</label><br>
+        <input type="password" id="p" placeholder="Keep a Strong one.." name="password" required> <br>
+
+        <label for="cp">Confirm Password</label><br>
+        <input type="password" name="confirm_password" id="cp" placeholder="Remember?" required><br>
+        
+        <input type="submit" value="Reset!" id="signup">
+    </form>
+
+    <button id="goback"> <a href="/users/profile">Back!</a> </button>
+
+
+
+    </div>
+    <script>
+        <% if(flash.success && flash.success.length>0) { %> 
+        
+        new Noty({
+            type: 'success',
+            theme:'relax',
+            layout: 'topRight',
+            text: '<%= flash.success%>',
+            timeout:1500
+}).show();
+     
+     <%}%>
+
+ </script>
+</body>
+</html>

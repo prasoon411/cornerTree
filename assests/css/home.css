@@ -1,0 +1,48 @@
+//for the main header
+#header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+//for setting background of body
+body{
+    margin:0px;
+    background-image: linear-gradient(to right,#FFFDE4,#005AA7);
+}
+
+#head{
+    color: white;
+    font-size: 2.5rem;
+    text-shadow: 1px 1px 2px whitesmoke, 0 0 25px black, 1px 1px 5px black;
+    margin-left:150px;
+}
+#sign{
+    margin-right: 5px;
+}
+a{
+    text-decoration: none;
+}
+.but-style{
+    font-size: 2rem;
+    color:white;
+}
+#divA{
+    margin-right: 50px;
+}
+.para{
+    color:white;
+    text-align: center;
+    margin-top:50px;
+}
+//header-2 styling
+#header-2{
+    
+    height: 200px;
+    background-image: linear-gradient(to right,#000428,#004e92);
+    width: 50%;
+    margin: auto;
+    border-radius: 5px;
+    margin-top: 10%;
+    padding-top: 0.01%;
+}
+

@@ -1,0 +1,51 @@
+<html>
+
+<head>
+    <title> <%= title %> </title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.min.js"></script>
+ 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="/css/home.css">
+</head>
+
+<body>
+   
+
+    <div id="header-container">
+
+        <h1 id="head">Welcome to Authenticator</h1>
+        <div id="divA">
+            <a class="but-style" href="/users/sign-in" id="sign">Sign-in</a>
+            <span>OR</span>
+            <a class="but-style" href="/users/sign-up">Sign-up</a>
+        </div>
+    </div>
+
+    <div id="header-2">
+
+        <h2 class="para"> Your one stop destination for all authentication process!! </h2>
+        <h3 class="para">Please <button> <a href="/users/sign-in">Sign-in</a></button> or <button><a
+                    href="/users/sign-up">Sign-up</a></button> to Continue!</h3>
+
+    </div>
+    <script>
+           <% if (flash.success && flash.success.length > 0) { %>
+
+            new Noty({
+                theme: 'relax',
+                text: '<%= flash.success %>',
+                type: 'success',
+                layout: 'topRight',
+                timeout: 1500
+
+            }).show();
+
+      <% } %>
+
+    </script>
+
+</body>
+
+</html>

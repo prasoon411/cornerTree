@@ -1,0 +1,46 @@
+#main_con{
+    text-align: center;
+    margin: auto;
+  margin-top: 6%;
+  height: auto;
+  width: 20%;
+  box-shadow: -5px -5px 30px 5px black, 5px 5px 30px 5px red;
+  border-radius: 10px;
+}
+#head{
+    color:white;
+    text-align: center;
+    margin-top: 35px;
+    text-shadow: 1px 1px 2px black, 0 0 25px white, 1px 1px 5px black;
+}
+
+body{
+    background-image: linear-gradient(to right,#005AA7,#FFFDE4);
+}
+label{
+    color: white;
+    font-size: 2rem;
+    font-family: 'Trocchi', serif; font-weight: normal; margin: 0;
+	color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px black, 1px 1px 5px black;
+}
+
+input{
+    width: 80%;
+    height: 4%;
+    border-radius: 5px;
+    margin-bottom: 3px;
+}
+#signup{
+    width: 25%;
+}
+
+#homeBut{
+    background-color: black;
+    margin-bottom: 5px;
+    width: 40%;
+}
+#homeBut a{
+    
+    color: white;
+}

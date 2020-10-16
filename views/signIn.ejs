@@ -1,0 +1,51 @@
+<html>
+
+<head>
+   <title> <%= title %> </title>
+  
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.min.css">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.min.js"></script>
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <link rel="stylesheet" href="/css/signIn.css">
+</head>
+
+<body>
+   
+    <h1 id="head1"> Enter Credentials Please...</h1>
+    <div id="main_con">
+
+    <form action="/users/create-session" method="POST">
+
+
+        <label for="e">Enter Email</label><br>
+        <input type="email" id="e" name="email" placeholder="Your email id" required><br>
+
+        <label for="p">Password</label><br>
+        <input type="password" id="p" placeholder="Your Password" name="password" required> <br>
+
+        
+        <input type="submit" value="Sign-In" id="signup"> <br>
+        <button id="homeBut"> <a href="/users/auth/google">Sing-in with Google</a></button><br>
+        <button id="homeBut"><a href="/">Home</a></button>
+    </form>
+
+
+
+    </div>
+    <script>
+       <% if(flash.success && flash.success.length>0) { %> 
+        
+        new Noty({
+            type: 'success',
+            theme:'relax',
+            layout: 'topRight',
+            text: '<%= flash.success%>',
+            timeout:1500
+}).show();
+     
+     <%}%>
+
+ </script>
+</body>
+</html>
