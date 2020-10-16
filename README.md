@@ -1,6 +1,6 @@
-<h1> Authenticator </h1>
+<h1> A basic profile setup for job portal </h1>
 
-<p> A basic Authentication build using Node.js, Passport.js and Express.js MongoDb</p>
+<p>  build using Node.js, Passport.js and Express.js MongoDb</p>
 
 <p> 1. CLone this Project </p>
 
